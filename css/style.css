@@ -25,7 +25,7 @@ body {
 
 .container1 {
   background-color: rgb(58, 114, 199);
-  height: 600px;
+  height: 620px;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -86,25 +86,22 @@ body {
 #chatterButton {
   margin: 0 auto;
   width: 100%;
+  margin-top: 25px;
 }
 
 #chatterButton:hover {
   background-color: rgba(206, 66, 244, 0.2);
   color: white;
+  margin-top: 25px;
 }
 
 #chatterButton:active {
   background-color: rgba(206, 66, 244, 0.1);
   opacity: .4;
+  margin-top: 25px;
 }
 
-  font-size: 24px;
-  background-color: purple;
-  border-width: 0;
-  border-radius: 100px;
-  color: grey;
-  opacity: .7;
-}
+
 
 /*ticker css starts HERE*/
 
@@ -171,4 +168,87 @@ body {
 
 h1, h2, p {
   padding: 0 5%;
+}
+
+/*responsive edits after this*/
+
+@media screen and (max-width: 1200px) {
+  .container1 {
+    height: 590px;
+  }
+
+}
+
+@media screen and (max-width: 980px) {
+  .container1 {
+    height: 680px;
+  }
+
+
+  .iconParagraphs {
+    color: white;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .iconAdjust {
+    margin-top: 25px;
+  }
+
+  .iconAdjust2 {
+    margin-top: 7px;
+  }
+
+  .icons {
+    padding: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .icons {
+    padding: 100px;
+    margin-top: 40px;
+  }
+
+  .container1 {
+    height: 1800px;
+  }
+
+  .iconParagraphs {
+    color: white;
+    margin-top: -100px;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .iconAdjust {
+    margin-top: -75px;
+  }
+
+  .iconAdjust2 {
+    margin-top: -88px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .container1 {
+    height: 1800px;
+  }
+
+}
+
+@media screen and (max-width: 570px) {
+
+  .container1 {
+    height: 1980px;
+  }
+
 }
